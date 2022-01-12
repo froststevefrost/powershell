@@ -1,3 +1,7 @@
+# This script will take a MAC address text file and search online for it's vendor/organization.
+# Requires a MACs.txt file in the same directory as the script.
+# Outputs the results to an array ($Listing) for formating or Export-CSV.
+
 Clear-Host
 $Listing = @()
 If (Test-Path .\Vendors.csv) {Remove-Item .\Vendors.csv -Force}
